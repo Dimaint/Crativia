@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CREATIVIA</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link href="style/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- иконки -->
+    <script
+      src="https://kit.fontawesome.com/c340fa877b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <script src="https://use.fontawesome.com/257551dd33.js"></script> -->
+
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="img/logo.svg" alt="" class="logo_img" />
+          <a href="#" class="logo_text">Creativia</a>
+        </div>
+
+        <nav>
+          <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-block">
+      <div class="main-block__title">
+        <h1 class="main_h1">why <span class="text_red">creativia?</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Ut et Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Ut et Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Ut et
+        </p>
+        <a href="#" class="btn_features">features</a>
+      </div>
+    </section>
+    <section class="about_block">
+      <div class="about block_title">
+        <h1>about <span class="text_red">creativia</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, <span class="text_red"> omnis veritatis</span> , itaque ratione
+          modi?
+        </p>
+      </div>
+      <div class="about_subblock">
+        <div class="about_sub_one" id="app">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+            sequi, cum quae! Autem molestiae hic laborum dignissimos placeat,
+            magni deserunt?
+          </p>
+
+          <div class="dropdown_block">
+            <div class="dropdown">
+              <i
+                class="fa fa-plus"
+                aria-hidden="true"
+                v-bind:class="{'fa fa-minus': show1}"
+              ></i>
+              <a
+                href="javascript:collapsElement('about_2')"
+                title=""
+                rel="nofollow"
+                v-on:click="show1 = !show1"
+                >Hwo is creativia</a
+              >
+            </div>
+            <div class="dropdown_text" id="about_1">
+              <p v-show="show1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                eum labore esse quam ratione officiis iusto illo explicabo natus
+                alias.
+              </p>
+            </div>
+          </div>
+
+          <div class="dropdown_block">
+            <div class="dropdown">
+              <i
+                class="fa fa-plus"
+                aria-hidden="true"
+                v-bind:class="{'fa fa-minus': show2}"
+              ></i>
+              <a
+                v-on:click="show2 = !show2"
+                href="javascript:collapsElement('about_2')"
+                title=""
+                rel="nofollow"
+                >Experiences</a
+              >
+            </div>
+            <div class="dropdown_text" id="about_2">
+              <p v-show="show2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+                sapiente repellendus fuga animi porro ipsa quasi cum, sit est
+                voluptates reiciendis tempore asperiores consectetur nemo?
+              </p>
+            </div>
+          </div>
+
+          <div class="dropdown_block">
+            <div class="dropdown">
+              <i
+                class="fa fa-plus"
+                aria-hidden="true"
+                v-bind:class="{'fa fa-minus': show3}"
+              ></i>
+              <a
+                v-on:click="show3 = !show3"
+                href="javascript:collapsElement('about_2')"
+                title=""
+                rel="nofollow"
+                >Learn more</a
+              >
+            </div>
+            <div class="dropdown_text" id="about_3">
+              <p v-show="show3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                recusandae repellendus est dolorum atque ad beatae quibusdam
+                quasi laudantium. Provident asperiores eligendi veniam, ipsum
+                illo dignissimos quo non vitae reiciendis!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about_sub_two">
+          <div class="about_img_block">
+            <div class="img_left"><img src="img/left img.png" alt="" /></div>
+            <div class="img_activ"><img src="img/active img.png" alt="" /></div>
+            <div class="img_right"><img src="img/right img.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+
+      <span class="line"></span>
+
+      <div class="about_sub3">
+        <div>
+          <img src="img/about-icon1.png" alt="" />
+          <h3>flat design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+            corrupti. Dolorem obcaecati dolore veritatis nemo, atque corporis
+            sequi dicta iure.
+          </p>
+        </div>
+        <div>
+          <img src="img/about-icon2 .png" alt="" />
+          <h3>retina ready</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+            provident explicabo molestiae vitae eligendi voluptas nihil mollitia
+            blanditiis aut!
+          </p>
+        </div>
+        <div>
+          <img src="img/about-icon3.png" alt="" />
+          <h3>responsive</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            numquam eos, eius! Fugiat suscipit similique inventore repellendus
+            nisi.
+          </p>
+        </div>
+        <div>
+          <img src="img/about-icon4.png" alt="" />
+          <h3>clean & useful</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            repudiandae eveniet autem quae eaque ipsa error ut maxime itaque
+            molestias?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="protfolio_block">
+      <div class="protfolio_title">
+        <h1>protfolio</h1>
+
+        <ul class="sort">
+          <li><a href="">all</a></li>
+          <li><a href="">illustration</a></li>
+          <li><a href="">digital art</a></li>
+          <li><a href="">web design</a></li>
+        </ul>
+      </div>
+
+      <div class="protfolio_img">
+        <div>
+          <a href=""><img src="img/protfolio_img1.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="img/protfolio_img2.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="img/protfolio_img3.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="img/protfolio_img4.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="img/protfolio_img5.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="img/protfolio_img6.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="img/protfolio_img7.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="img/protfolio_img8.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-product_block">
+      <div class="block_title">
+        <h1>our <span class="text_red">product feature</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, <span class="text_red"> omnis veritatis</span> , itaque ratione
+          modi?
+        </p>
+      </div>
+
+      <div class="our-product-subblock">
+        <div class="advantages">
+          <div class="advantages_item left">
+            unlimited color option <i class="far fa-check-circle"></i>
+          </div>
+          <div class="advantages_item left">
+            outstanding support <i class="far fa-check-circle"></i>
+          </div>
+          <div class="advantages_item left">
+            retina ready <i class="far fa-check-circle"></i>
+          </div>
+        </div>
+        <div class="mockup">
+          <button>free psd</button>
+        </div>
+        <div class="advantages">
+          <div class="advantages_item right">
+            <i class="far fa-check-circle"></i>unlimited color option
+          </div>
+          <div class="advantages_item right">
+            <i class="far fa-check-circle"></i> outstanding support
+          </div>
+          <div class="advantages_item right">
+            <i class="far fa-check-circle"></i> retina ready
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients_block">
+      <div class="our-product block_title">
+        <h1>our <span class="text_red">clients</span></h1>
+        <p>
+          Lorem ipsum dolor <span class="text_red">sit amet,</span> Commodi eum
+          nobis quam laboriosam neque quis, omnis veritatis , itaque ratione
+          modi?
+        </p>
+      </div>
+      <div class="clients_subblock">
+        <div class="clients_text">
+          <h3>happy clients say</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            magni suscipit mollitia animi facilis obcaecati?
+          </p>
+          <div>
+            <img src="/img/client-img.png" alt="" />
+            <p>amr srour</p>
+          </div>
+        </div>
+        <div class="clients_img">
+          <div><img src="/img/videohive-light.png" alt="" /></div>
+          <div><img src="/img/photodune-light.png" alt="" /></div>
+          <div><img src="/img/graphicriver-light.png" alt="" /></div>
+          <div><img src="/img/codecanyon-light.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="block_title">
+        <h1>our <span class="text_red">teamwork</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, <span class="text_red"> omnis veritatis</span> , itaque ratione
+          modi?
+        </p>
+      </div>
+      <div class="team-cards">
+        <div class="team-card">
+          <div class="team-card_photo">
+            <img class="" src="/img/ourteam1.png" alt="" />
+            <ul class="team-card_social">
+              <li>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-card_text">
+            <h4>Bruce Wayne</h4>
+            <p>Webdesigner</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card_photo">
+            <img class="" src="/img/ourteam2.png" alt="" />
+            <ul class="team-card_social">
+              <li>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-card_text">
+            <h4>Amr Srour</h4>
+            <p>Webdesigner</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card_photo">
+            <img class="" src="/img/ourteam3.png" alt="" />
+            <ul class="team-card_social">
+              <li>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-card_text">
+            <h4>Amr Srour</h4>
+            <p>Webdesigner</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card_photo">
+            <img class="" src="/img/ourteam1.png" alt="" />
+            <ul class="team-card_social">
+              <li>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-card_text">
+            <h4>Amr Srour</h4>
+            <p>Webdesigner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="block_title">
+        <h1>our <span class="text_red">skills</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, <span class="text_red"> omnis veritatis</span> , itaque ratione
+          modi?
+        </p>
+      </div>
+      <div class="block_skills">
+        
+          <div class="skills_item">
+            <div class="circle-big">
+              <div class="text">
+                90%
+              </div>
+              <svg>
+                <linearGradient id="linear-gradient">
+                  <stop
+                    offset="0%"
+                    style="stop-color: #ff1748; stop-opacity: 1;"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #f0bec8; stop-opacity: 1;"
+                  />
+                </linearGradient>
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="progress p90" cx="57" cy="57" r="52"></circle>
+              </svg>
+            </div>
+            <div class="progress-descr">
+              <h5>PHOTOSHOP</h5>
+              <p>Donec luctus tortor in placerat faucibus</p>
+            </div>
+          </div>
+
+          <div class="skills_item">
+            <div class="circle-big">
+              <div class="text">
+                80%
+              </div>
+              <svg>
+                <linearGradient id="linear-gradient">
+                  <stop
+                    offset="0%"
+                    style="stop-color: #ff1748; stop-opacity: 1;"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #f0bec8; stop-opacity: 1;"
+                  />
+                </linearGradient>
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="progress p80" cx="57" cy="57" r="52"></circle>
+              </svg>
+            </div>
+            <div class="progress-descr">
+              <h5>HTML</h5>
+              <p>Donec luctus tortor in placerat faucibus</p>
+            </div>
+          </div>
+
+          <div class="skills_item">
+            <div class="circle-big">
+              <div class="text">
+                70%
+              </div>
+              <svg>
+                <linearGradient id="linear-gradient">
+                  <stop
+                    offset="0%"
+                    style="stop-color: #ff1748; stop-opacity: 1;"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #f0bec8; stop-opacity: 1;"
+                  />
+                </linearGradient>
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="progress p70" cx="57" cy="57" r="52"></circle>
+              </svg>
+            </div>
+            <div class="progress-descr">
+              <h5>PHP</h5>
+              <p>Donec luctus tortor in placerat faucibus</p>
+            </div>
+          </div>
+        
+          <div class="skills_item">
+            <div class="circle-big">
+              <div class="text">
+                90%
+              </div>
+              <svg>
+                <linearGradient id="linear-gradient">
+                  <stop
+                    offset="0%"
+                    style="stop-color: #ff1748; stop-opacity: 1;"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #f0bec8; stop-opacity: 1;"
+                  />
+                </linearGradient>
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="progress p90" cx="57" cy="57" r="52"></circle>
+              </svg>
+            </div>
+            <div class="progress-name">
+              <h5>WORDPRESS</h5>
+              <p>Donec luctus tortor in placerat faucibus</p>
+            </div>
+          </div>
+        
+      </div>
+    </section>
+    <section class="bg-dark">
+      <div class="block_title">
+        <h1>our <span class="text_red">services</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, <span class="text_red"> omnis veritatis</span> , itaque ratione
+          modi?
+        </p>
+      </div>
+      <div class="services">
+        <div class="services_item">
+          <div class="services_item_title"><i class="fa fa-css3" aria-hidden="true"></i><h6>HTML/CSS</h6></div>
+          <div class="services_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore esse eum laudantium magnam enim, facilis nam repellendus labore velit non debitis, obcaecati id, est ratione facere et iste repudiandae.</div>
+        </div>
+        <div class="services_item">
+          <div class="services_item_title"><i class="fa fa-css3" aria-hidden="true"></i><h6>HTML/CSS</h6></div>
+          <div class="services_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore esse eum laudantium magnam enim, facilis nam repellendus labore velit non debitis, obcaecati id, est ratione facere et iste repudiandae.</div>
+        </div>
+        <div class="services_item">
+          <div class="services_item_title"><i class="fa fa-wordpress" aria-hidden="true"></i><h6>WORDPRESS</h6></div>
+          <div class="services_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore esse eum laudantium magnam enim, facilis nam repellendus labore velit non debitis, obcaecati id, est ratione facere et iste repudiandae.</div>
+        </div>
+        <div class="services_item">
+          <div class="services_item_title"><i class="fa fa-tablet" aria-hidden="true"></i><h6>APPLICATION</h6></div>
+          <div class="services_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore esse eum laudantium magnam enim, facilis nam repellendus labore velit non debitis, obcaecati id, est ratione facere et iste repudiandae.</div>
+        </div>
+        <div class="services_item">
+          <div class="services_item_title"><i class="fa fa-pencil" aria-hidden="true"></i><h6>UI/UX DESIGN</h6></div>
+          <div class="services_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore esse eum laudantium magnam enim, facilis nam repellendus labore velit non debitis, obcaecati id, est ratione facere et iste repudiandae.</div>
+        </div>
+        <div class="services_item">
+          <div class="services_item_title"><i class="fa fa-laptop" aria-hidden="true"></i><h6>Responsive layout</h6></div>
+          <div class="services_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore esse eum laudantium magnam enim, facilis nam repellendus labore velit non debitis, obcaecati id, est ratione facere et iste repudiandae.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="block_title">
+        <h1>Plans <span class="text_red">Bestseller</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, <span class="text_red"> omnis veritatis</span> , itaque ratione
+          modi?
+        </p>
+      </div>
+      <div class="sellers">
+        <div class="sellers-item">
+          <h6>reseller</h6>
+          <ul>
+            <li class="price">199$ <span>year</span> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><button>order now</button></li>
+          </ul>
+        </div>
+        <div class="sellers-item">
+          <h6>reseller</h6>
+          <ul>
+            <li class="price">199$ <span>year</span> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><button>order now</button></li>
+          </ul>
+        </div>
+        <div class="sellers-item">
+          <h6>reseller</h6>
+          <ul>
+            <li class="price">199$ <span>year</span> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><button>order now</button></li>
+          </ul>
+        </div>
+        <div class="sellers-item">
+          <h6>reseller</h6>
+          <ul>
+            <li class="price">199$ <span>year</span> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><button>order now</button></li>
+          </ul>
+        </div>
+        <!-- <button class="show-more"></button> -->
+      </div>
+    </section>
+
+    <section class="bg-dark">
+      <div class="block_title">
+        <h1> <span class="text_red"><i class="fa fa-twitter" aria-hidden="false"></i></span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, itaque ratione modi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum velit odio similique rem eius quia exercitationem voluptas repudiandae nulla animi deserunt eligendi id, porro placeat maxime, enim ex delectus nemo!
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="block_title">
+        <h1>our <span class="text_red">Blog</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, Commodi eum nobis quam laboriosam neque
+          quis, <span class="text_red"> omnis veritatis</span> , itaque ratione
+          modi?
+        </p>
+      </div>
+      <div class="blog-carts">
+        <div class="blog-carts-item">
+          <div class="img"><img src="/img/blog1.png" alt=""></div>
+          <div class="blog-carts-item_text">
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <ul>
+              <li><span><i class="fa fa-user" aria-hidden="true"></i></span>admin</li>
+              <li><span><i class="fa fa-comment" aria-hidden="true"></i></span>1205</li>
+              <li><span><i class="fa fa-eye" aria-hidden="true"></i></span> 1205</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eius corporis corrupti ullam a. Asperiores quaerat illo praesentium neque eius, alias eos vero ipsam modi dolorem quisquam delectus ut assumenda!</p>
+            <button>view more</button>
+          </div>
+        </div>
+        <div class="blog-carts-item">
+          <div class="img"><img src="/img/blog2.png" alt=""></div>
+          <div class="blog-carts-item_text">
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <ul>
+              <li><span><i class="fa fa-user" aria-hidden="true"></i></span>admin</li>
+              <li><span><i class="fa fa-comment" aria-hidden="true"></i></span>1205</li>
+              <li><span><i class="fa fa-eye" aria-hidden="true"></i></span> 1205</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eius corporis corrupti ullam a. Asperiores quaerat illo praesentium neque eius, alias eos vero ipsam modi dolorem quisquam delectus ut assumenda!</p>
+            <button>view more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-img">
+      <div class="follow">
+        <h1>Follow <span class="text_red">Creativia</span> </h1>
+        <div class="follow_social">
+          <div class="follow_social-item">
+            <div class="social-link"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <span social="counter">20000</span>
+          </div>
+          <div class="follow_social-item">
+            <div class="social-link"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <span social="counter">99900</span>
+          </div>
+          <div class="follow_social-item">
+            <div class="social-link"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <span social="counter">121</span>
+          </div>
+          <div class="follow_social-item">
+            <div class="social-link"><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+            <span social="counter">500</span>
+          </div>
+        </div>
+               
+      </div>
+      
+    </section>
+    
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d888173.4553123617!2d46.312521769786976!3d-22.313774056965133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1588135068768!5m2!1sru!2skz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+
+    <footer class="bg-dark footer">
+      <h2>Creativia</h2>
+      <p>Design by Amr Srour </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          show1: false,
+          show2: false,
+          show3: false,
+        },
+      });
+    </script>
+
+    <!--<script>
+ function collapsElement(id) {
+ if ( document.getElementById(id).style.display != "none" ) {
+ document.getElementById(id).style.display = 'none';
+ }
+ else {
+ document.getElementById(id).style.display = '';
+ }
+ }
+ </script>
+-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
