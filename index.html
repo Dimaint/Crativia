@@ -24,16 +24,23 @@
   </head>
   <body>
     <!-- <script src="https://use.fontawesome.com/257551dd33.js"></script> -->
-
+<div id="app">
     <header>
       <div class="header">
         <div class="logo">
-          <img src="img/logo.svg" alt="" class="logo_img" />
           <a href="#" class="logo_text">Creativia</a>
+          <svg with="205px" height="105px" fill="#131313" stroke="red" stroke-width="2"
+          stroke-linecap="square" fill="none" stroke-linejoin="bevel"
+          >
+            <text>Creativia</text>
+            <polyline points="5 5, 200 5, 200 40, 150 100, 50 100, 5 40, 5 5"/>
+            
+          </svg>
+          </a>
         </div>
 
-        <nav>
-          <ul class="nav">
+        <nav id="menu" v-show="menu">
+          <ul class="nav" >
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -43,7 +50,9 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+          
         </nav>
+        <button id="trigger" class="toggle-menu" v-on:click="menu = !menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
       </div>
     </header>
 
@@ -69,7 +78,7 @@
         </p>
       </div>
       <div class="about_subblock">
-        <div class="about_sub_one" id="app">
+        <div class="about_sub_one" >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
             sequi, cum quae! Autem molestiae hic laborum dignissimos placeat,
@@ -712,6 +721,13 @@
       <h2>Creativia</h2>
       <p>Design by Amr Srour </p>
     </footer>
+
+    <section>
+      <svg margin="10px"with="200px" height="100" fill="red">
+        <polyline points="0 0, 200 0, 200 40, 75 200, 25 200, 0 40, 0 0"/>
+      </svg>
+    </section>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <script>
@@ -721,21 +737,20 @@
           show1: false,
           show2: false,
           show3: false,
+          menu: true,
         },
       });
     </script>
+    <!-- <script>
+      document.getElementById("trigger").onclick = function() {
+        open()
+      };
 
-    <!--<script>
- function collapsElement(id) {
- if ( document.getElementById(id).style.display != "none" ) {
- document.getElementById(id).style.display = 'none';
- }
- else {
- document.getElementById(id).style.display = '';
- }
- }
- </script>
--->
+      function open() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script> -->
+      
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
